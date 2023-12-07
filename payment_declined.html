@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&amp;display=swap" rel="stylesheet">
+    <title>payment form</title>
+    <style>
+        html, body {
+            display: flex;
+            height: 70%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            background-color: #3a3b3d;
+            font-family: Alkatra;
+        }
+
+        .payment-container {
+            width: 80%;
+        }
+
+        .payment-box {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .payment-main-sections {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .batched {
+            padding-top: 2rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container" style="padding: 15px;">
+        <div class="payment-box">
+            <div style="border: 2px solid; padding: 3.5rem 6rem 5rem 6rem; border-radius: 10px; background: #4d4d4d; color: #ffffffd6;">
+                <div class="payment-main-sections pending">
+                    <div class="icon-img-common" style="display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;">
+                        <i class="fa fa-warning  fa-3x fa-fw"></i>
+                        <h3 style="color: red;">PAYMENT DECLINED</h3>
+                    </div>
+                </div>
+                <div class="batched">
+                    <div class="field-title" style="padding-bottom: 1rem;"> 
+                        <span>Transaction ID</span>
+                        <span>:</span>
+                        <span style="padding-left: 1rem;">937109101</span>
+                     </div>
+                    <div class="field-title" style="padding-bottom: 1rem;">
+                        <span>Amount</span>
+                        <span>:</span>
+                        <span style="padding-left: 1rem;"><small>UGX </small>&nbsp;64000.00</span> 
+                    </div>
+                    <div class="field-value" style="padding-bottom: 1rem;">
+                        <span>Status</span>
+                        <span>:</span>
+                        <span style="padding-left: 1rem; color: red;">Declined</span> 
+                    </div>
+                    <div class="field-title">
+                        <span>Date</span>
+                        <span>:</span>
+                        <span style="padding-left: 1rem;">07 Dec 2023</span> 
+                    </div>
+                </div>
+            </div>
+            <button style="margin-top: 1.5rem; background: red; color: white; cursor: pointer; padding: 0.5rem 3rem; border-radius: 1rem; font-family: Alkatra; border: 1px;"><span style="font-size: 15px;">Try Again</span></button>
+        </div>
+    </div>
+</body>
+</html>
